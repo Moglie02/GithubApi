@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/git-hub-api",
+            "outputPath": "dist/githubSearch",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "GitHubAPI:build:production"
+              "browserTarget": "GitHubSearch:build:production"
             },
             "development": {
-              "browserTarget": "GitHubAPI:build:development"
+              "browserTarget": "GitHubSearch:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -102,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "GitHubAPI"
+  "defaultProject": "GitHubSearch"
 }
