@@ -14,7 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     UsersComponent,
     NavbarComponent,
-  ],
+    ])},
   imports: [
     BrowserModule,
     AppRoutingModule,
