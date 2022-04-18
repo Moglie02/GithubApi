@@ -5,4 +5,4 @@ describe('Users', () => {
     expect(new Users()).toBeTruthy();
   });
 });
-/*© 2022 GitHub, Inc./*
+
