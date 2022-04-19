@@ -28,7 +28,8 @@ import { RepositoryComponent } from './repository/repository.component';
     AppRoutingModule,
 
 ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
