@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ProfilesComponent } from './profiles/profiles.component';
+import { RepositoryComponent } from './repository/repository.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'users', pathMatch: 'full'},
-/*  {path: 'users', component: UsersComponent  },*/
-  {path: '**',  redirectTo: 'users', pathMatch: 'full'}
+  {path: '', redirectTo: 'profiles', pathMatch: 'full'},
+  {path: 'profiles', component: ProfilesComponent  },
+  {path: 'repository', component: RepositoryComponent},
 ];
 
 @NgModule({
