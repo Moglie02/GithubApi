@@ -1,1 +1,32 @@
+<div class = "container">
+    <div class="row">
+        <div class="col-3">
+            <h2>Student CREDENTIALS</h2>
+            <form (ngSubmit)="searchGithubUser() " id="search-form" #form="ngForm">
+                <input class ="form-control" ngModel="search" type="text">
+                <button type="submit" class="btn btn-block btn-search"> click </button>
+            </form>   
+        </div>
 
+        <div class="col-6">
+            <div>
+                <img [src]="user?.avatar_url" alt="devpic">
+                
+            </div>
+
+            <div>
+                <h2>{{user?.login}}</h2>
+                <p>{{user?.public_repos}}</p>
+                <p>{{user?.created_at|date}}</p>
+                <p>{{user?.followers}}</p>
+                <p>{{user?.following}}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div >
+    <div class="row">
+
+    </div>
+</div>

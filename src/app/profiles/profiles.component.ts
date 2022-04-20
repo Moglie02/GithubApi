@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Users } from '../users';
 import { UsersService } from '../users.service';
+
 
 @Component({
   selector: 'app-profiles',
@@ -10,15 +12,18 @@ import { UsersService } from '../users.service';
 export class ProfilesComponent implements OnInit {
   user: Users;
   repo: any;
+  search: string;
 
-  constructor(private usersService: UsersService) {
-    
-   }
+  constructor(private usersService: UsersService) { }
+
+  @ViewChild('form')
+  searchForm: NgForm;
+
 
 
   ngOnInit(): void {
-    this.users('Moglie');
-    this.repos('Moglie');
+    this.users('Moglie02');
+    this.repos('Moglie02');
   }
   users(githubUsername: string) {
     this.usersService.githubUser(githubUsername).then(
@@ -43,4 +48,16 @@ export class ProfilesComponent implements OnInit {
           console.log(error);
         }
       );
+    }
+
+    searchGithubUser() {
+      this.search = this.searchForm.value.search;
+      this.usersService.githubUser(this.search).then(
+        (response) => {
+          this.users = this.usersService.users;
+        },
+        (error) => {
+          console.log(error);
+        }
+      ); 
     }}
