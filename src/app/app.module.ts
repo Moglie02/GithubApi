@@ -4,7 +4,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { QuotesComponent } from './quotes/quotes.component';
+
 /*import { UsersComponent } from './users/users.component';*/
 import {  UsersService } from "./users.service";
 /*import { NgProgressModule } from '@ngx-progressbar/core';*/
@@ -12,6 +12,7 @@ import {  UsersService } from "./users.service";
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProfilesComponent } from './profiles/profiles.component';
 import { RepositoryComponent } from './repository/repository.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { RepositoryComponent } from './repository/repository.component';
     NavbarComponent,
     ProfilesComponent,
     RepositoryComponent,
+    UserComponent,
     ],
 
   imports: [
