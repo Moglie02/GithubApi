@@ -57,4 +57,4 @@ Future update of the landing page styling
 Email - salma.ntidendereza@student.moringaschool.com
 ## License
 MIT License
-Copyright (c) 2022 **Salma Ntidendereza**
+Copyright (c) 2022 **Moglie**
