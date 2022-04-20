@@ -11,7 +11,7 @@ import { title } from 'process';
 export class AppComponent {
   title: any;
   constructor(private http: HttpClient){
-    title = 'quotesapp';
+/* title = 'quotesapp';*/
 
 function testHttp() {
   throw new Error('Function not implemented.');

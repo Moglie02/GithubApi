@@ -20,7 +20,7 @@ export class UsersService {
    }
 
    getRepos (): Observable<any>{
-    const userUrl=`https://api.github.com/users/${this.username}?${environment.apiUrl}`
+    const userUrl=`https://api.github.com/users/${this.username}?${environment.apiKey}`
     return this.http.get<any>(userUrl)
        }
 
