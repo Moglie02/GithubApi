@@ -4,10 +4,10 @@ import { ProfilesComponent } from './profiles/profiles.component';
 import { RepositoryComponent } from './repository/repository.component';
 import { UserComponent } from './user/user.component';
 const routes: Routes = [
-  {path: '', redirectTo: 'profiles', pathMatch: 'full'},
+  {path: '', redirectTo: '/profiles', pathMatch: 'full'},
   {path: 'profiles', component: ProfilesComponent  },
   {path: 'repository', component: RepositoryComponent},
-  {path: 'users', component: UserComponent},
+  {path: 'user', component: UserComponent},
 ];
 
 @NgModule({
