@@ -3,7 +3,7 @@ import { HttpClient  } from "@angular/common/http";
 import { environment } from "../environments/environment.prod";
 import { Users } from "./users";
 import { Repos } from "./repos";
-import { Observable } from 'rxjs';
+/*import { Observable } from 'rxjs';*/
 
 @Injectable({
   providedIn: 'root'
@@ -36,7 +36,6 @@ export class UsersService {
         following: number;
         avatar_url: string;
       }
-       }
 
        let userPromise = new Promise<void>((resolve, reject) => {
         this.http.get<ApiUserResponse>(environment.apiUrl + '/' + githubUsername + '?access_token=' + environment.apiKey).toPromise().then(response => {
